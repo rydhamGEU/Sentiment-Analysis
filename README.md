@@ -26,3 +26,11 @@ This project performs sentiment analysis on a dataset of text reviews. The prima
 1. **Install Dependencies:**
    ```bash
    pip install pandas matplotlib nltk wordcloud scikit-learn pickle-mixin
+2. ## Download NLTK Stopwords
+
+To download NLTK stopwords, you can execute the following Python code snippet:
+
+```python
+import nltk
+nltk.download('stopwords')
+
