@@ -33,4 +33,18 @@ To download NLTK stopwords, you can execute the following Python code snippet:
 ```python
 import nltk
 nltk.download('stopwords')
+## Run the Script
+
+3. **Ensure your data file** `sentiment_dataset.csv` **is in the same directory as the script.**
+
+4. **Execute the script to preprocess data, visualize word clouds, train the model, and evaluate performance.**
+
+5. **Data Preprocessing**
+
+Cleans text by removing stopwords:
+
+```python
+def clean_review(review):
+    str = ' '.join(word for word in review.split() if word.lower() not in stopwords.words('english'))
+    return str
 
